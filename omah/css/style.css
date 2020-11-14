@@ -10,7 +10,7 @@
 html{
     scroll-behavior: smooth;
 }
-
+ 
 /* custom scroll bar */
 ::-webkit-scrollbar {
     width: 10px;
@@ -234,6 +234,7 @@ section .title::after{
     color: #4070F4;
 }
 .about .about-content .right p{
+    font-size: 18px;
     text-align: justify;
 }
 .about .about-content .right a{

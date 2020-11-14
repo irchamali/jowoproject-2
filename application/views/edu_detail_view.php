@@ -24,12 +24,12 @@
 	<link rel="stylesheet" href="<?php echo base_url() . 'theme/css/font-awesome.min.css' ?>" />
 	<!-- SEO Tags -->
 	<meta name="description" content="<?php echo $description; ?>" />
-	<link rel="canonical" href="<?php echo site_url('blog/' . $slug); ?>" />
+	<link rel="canonical" href="<?php echo site_url('edu/' . $slug); ?>" />
 	<meta property="og:locale" content="id_ID" />
 	<meta property="og:type" content="article" />
 	<meta property="og:title" content="<?php echo $title; ?>" />
 	<meta property="og:description" content="<?php echo $description; ?>" />
-	<meta property="og:url" content="<?php echo site_url('blog/' . $slug); ?>" />
+	<meta property="og:url" content="<?php echo site_url('edu/' . $slug); ?>" />
 	<meta property="og:site_name" content="<?php echo $site_name; ?>" />
 	<meta property="article:publisher" content="<?php echo $site_facebook; ?>" />
 	<meta property="article:section" content="<?php echo $category; ?>" />
@@ -232,7 +232,7 @@
 
 			<!-- SECTION SUBSCRIBE
 				================================================== -->
-			<section class="page-section subscribe-section small-section">
+			<!-- <section class="page-section subscribe-section small-section">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-10 col-md-offset-1">
@@ -243,7 +243,7 @@
 								<div class="col-sm-6">
 									<form class="form-inline" action="<?php echo site_url('subscribe'); ?>" method="post">
 										<div class="form-group">
-											<input type="hidden" name="url" value="<?php echo site_url('blog/' . $slug); ?>" required>
+											<input type="hidden" name="url" value="<?php echo site_url('edu/' . $slug); ?>" required>
 											<input type="email" name="email" required placeholder="Your Email..." class="form-control">
 											<button type="submit" class="btn btn-subscribe bg-white">Subscribe</button>
 										</div>
@@ -254,7 +254,7 @@
 						</div>
 					</div>
 				</div>
-			</section>
+			</section> -->
 
 
 			<hr class="nomargin nopadding" />
@@ -313,6 +313,10 @@
 				showLabel: true,
 				shareIn: "popup",
 				shares: [{
+						share: "whatsapp",
+						label: "whatsapp"
+					},
+					{
 						share: "twitter",
 						label: "Twitter"
 					},
@@ -321,8 +325,8 @@
 						label: "Facebook"
 					},
 					{
-						share: "whatsapp",
-						label: "WhatsApp"
+						share: "line",
+						label: "line"
 					},
 					{
 						share: "linkedin",

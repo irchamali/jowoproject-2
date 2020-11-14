@@ -120,7 +120,7 @@
                 </div>
                 <div class="card">
                     <div class="box">
-                        <i class="fa fa-chart-line"></i>
+                        <i class="fa fa-book"></i>
                         <!-- <i class="fa fa-code"></i> -->
                         <div class="text">Advertising</div>
                         <!-- <p>Advertising adalah salah satu bentuk komunikasi komersil maupun non komersil dengan tujuan agar khalayak memahami, mengikuti, atau mengambil tindakan tertentu. Web dikembangkan atas dasar interaksi sosial melalui sarana media website.</p> -->
@@ -197,7 +197,7 @@
                 <?php foreach ($testimonial->result() as $test) : ?>
                     <div class="card">
                         <div class="box">
-                            <a href="javascript:void(0)">
+                            <a href="#">
                                 <img src="<?php echo base_url() . 'assets/images/' . $test->testimonial_image; ?>" class="img" alt="" />
                             </a>
                             <div class="text"><?php echo $test->testimonial_name; ?></div>

@@ -74,7 +74,7 @@
 						<?php foreach ($data->result() as $row) : ?>
 							<div class="col-md-4 col-sm-6 mb-30 wow fadeIn">
 								<article>
-									<a class="articles-card" href="<?php echo site_url('blog/' . $row->post_slug); ?>" title="">
+									<a class="articles-card" href="<?php echo site_url('edu/' . $row->post_slug); ?>" title="">
 										<div class="card-wrap">
 											<div class="card-image">
 												<div class="article-thumbnail" data-background="<?php echo base_url() . 'assets/images/thumb/' . $row->post_image; ?>"></div>

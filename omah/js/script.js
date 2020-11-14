@@ -42,7 +42,7 @@ $(document).ready(function(){
     });
 
     var typed = new Typed(".typing-2", {
-        strings: ["Personal Blog", "Landing Page", "Portfolio", "Bussiness web", "company profile"],
+        strings: ["Personal Blog", "Landing Page", "Portfolio", "Business Web", "Company Profile"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true

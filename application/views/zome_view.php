@@ -76,7 +76,7 @@
 							<div class="local-scroll">
 								<a href="<?php echo site_url('about'); ?>" class="btn bg-black white-color">About</a>
 								<span class="btn_seperator"></span>
-								<a href="<?php echo site_url('blog'); ?>" class="btn bg-black whitre-color hidden-xs">Blog</a>
+								<a href="<?php echo site_url('edu'); ?>" class="btn bg-black whitre-color hidden-xs">Blog</a>
 							</div>
 						</div>
 					</div>
