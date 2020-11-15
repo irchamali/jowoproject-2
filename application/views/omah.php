@@ -15,6 +15,7 @@
     <link rel="shortcut icon" href="<?= base_url('theme/images/' . $icon); ?>">
     <link rel="stylesheet" href="<?= base_url('theme/css/bootstrap.min.css') ?>" />
     <link rel="stylesheet" href="<?= base_url('omah/css/style.css'); ?>">
+
     <!-- SEO Tag -->
     <meta name="description" content="<?php echo $site_desc; ?>" />
     <link rel="canonical" href="<?php echo site_url(); ?>" />
@@ -61,13 +62,9 @@
                 <li><a href="#home" class="menu-btn">Home</a></li>
                 <li><a href="#about" class="menu-btn">About</a></li>
                 <li><a href="#services" class="menu-btn">Services</a></li>
-                <li><a href="#skills" class="menu-btn">Skills</a></li>
+                <!-- <li><a href="#skills" class="menu-btn">Skills</a></li> -->
                 <li><a href="#teams" class="menu-btn">Project</a></li>
-                <li><a href="#contact" class="menu-btn">Contact</a></li>
-                <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                    Cek
-                </button> -->
-                <!-- <li><a type="button" class="btn-search" data-toggle="modal" data-target="#exampleModal"><span class="fa fa-search"></span></a></li> -->
+                <!-- <li><a href="#contact" class="menu-btn">Contact</a></li> -->
                 <li><a href="javascript:void(0)" class="btn-search"><span class="fa fa-search"></span></a></li>
             </ul>
             <div class="menu-btn">
@@ -76,13 +73,14 @@
         </div>
     </nav>
 
+
     <!-- home section start -->
     <section class="home" id="home">
         <div class="max-width">
             <div class="home-content">
                 <div class="text-1">Hallo, Dulur-dulur</div>
                 <div class="text-2"><span class="typing"></span></div>
-                <div class="text-3">Jowo<span>Kode</span> present</div>
+                <div class="text-3">Jowo<span>Kode</span> | Web Dev.</div>
                 <!-- <div class="text-1">Irham | Founder</div> -->
                 <a href="https://api.whatsapp.com/send?phone=6285708497317">Hire me</a>
             </div>
@@ -92,15 +90,15 @@
     <!-- about section start -->
     <section class="about" id="about">
         <div class="max-width">
-            <h2 class="title">About</h2>
+            <h2 class="title">Apa itu JowoKode?</h2>
             <div class="about-content">
                 <div class="column left">
                     <img src="<?= base_url() . 'theme/images/' . $about_img; ?>">
                 </div>
                 <div class="column right">
-                    <div class="text">Mau dibuatkan <span class="typing-2"></span>?</div>
                     <p><?php echo $about_desc; ?></p>
-                    <a href="<?= base_url('omah/CV_IrchamAli.pdf'); ?>">Download CV</a>
+                    <div class="text">Kami melayani pembuatan <span class="typing-2"></span> <i class="fa fa-smile"></i></div>
+
                 </div>
             </div>
         </div>
@@ -109,37 +107,54 @@
     <!-- services section start -->
     <section class="services" id="services">
         <div class="max-width">
-            <h2 class="title">Our services</h2>
+            <h2 class="title">Web Programming</h2>
             <div class="serv-content">
                 <div class="card">
                     <div class="box">
-                        <i class="fa fa-paint-brush"></i>
-                        <div class="text">Web Design</div>
-                        <!-- <p>Web Desain adalah istilah yang sering digunakan untuk menggambarkan bagaimana tampilan isi suatu website atau situs. Web yang kami bangun kami sesuaikan dengan kaidah dan kebutuhan customer secara personal maupun instansi.</p> -->
+                        <i class="fa fa-html5"></i>
+                        <div class="text">HTML 5</div>
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
-                        <i class="fa fa-book"></i>
-                        <!-- <i class="fa fa-code"></i> -->
-                        <div class="text">Advertising</div>
-                        <!-- <p>Advertising adalah salah satu bentuk komunikasi komersil maupun non komersil dengan tujuan agar khalayak memahami, mengikuti, atau mengambil tindakan tertentu. Web dikembangkan atas dasar interaksi sosial melalui sarana media website.</p> -->
+                        <i class="fa fa-css3"></i>
+                        <div class="text">CSS 3</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <i class="fab fa-js-square"></i>
+                        <div class="text">JavaScript</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <i class="fab fa-php"></i>
+                        <div class="text">PHP</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <i class="fa fa-database"></i>
+                        <div class="text">MySQL</div>
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
                         <i class="fa fa-code"></i>
-                        <div class="text">Graphical Design</div>
-                        <!-- <p>Desain Grafis adalah proses komunikasi menggunakan elemen visual yang dimaksudkan untuk menciptakan persepsi akan suatu pesan yang disampaikan. Web yang dibuat tentu akan memperhatikan kesesuaian dan estetika yg disuguhkan.</p> -->
+                        <div class="text">Framework</div>
                     </div>
                 </div>
+            </div>
+            <div class="text-center">
+                <a href="<?= base_url('/edu'); ?>">VIEW MORE</a>
             </div>
         </div>
         </div>
     </section>
 
     <!-- skills section start -->
-    <section class="skills" id="skills">
+    <!-- <section class="skills" id="skills">
         <div class="max-width">
             <h2 class="title">Skills</h2>
             <div class="skills-content">
@@ -187,7 +202,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- teams section start -->
     <section class="teams" id="teams">
@@ -211,13 +226,12 @@
     </section>
 
     <!-- contact section start -->
-    <section class="contact" id="contact">
+    <!-- <section class="contact" id="contact">
         <div class="max-width">
             <h2 class="title">Contact me</h2>
             <div class="contact-content">
                 <div class="column left">
-                    <div class="text">Get in Touch</div>
-                    <p>Ayo dulur, kalo kalian tertarik untuk mengembangkan web atau mau tanya-tanya dulu. Langsung wae hubungi lewat medsos iki utawa form message!</p>
+                    <div class="text">Follow Me</div>
                     <div class="icons">
                         <div class="row">
                             <i class="fa fa-instagram"></i>
@@ -227,33 +241,26 @@
                             </div>
                         </div>
                         <div class="row">
-                            <i class="fa fa-twitter"></i>
+                            <i class="fa fa-twitter-square"></i>
                             <div class="info">
                                 <div class="head">Twitter</div>
                                 <div class="sub-title">twitter.com/bro_irham</div>
                             </div>
                         </div>
                         <div class="row">
-                            <i class="fa fa-youtube"></i>
+                            <i class="fa fa-youtube-square"></i>
                             <div class="info">
                                 <div class="head">Youtube</div>
                                 <div class="sub-title">Ircham Ali</div>
                             </div>
                         </div>
                         <div class="row">
-                            <i class="fa fa-envelope"></i>
+                            <i class="fa fa-facebook-square"></i>
                             <div class="info">
-                                <div class="head">Email ku</div>
-                                <div class="sub-title">id.irchamali@gmail.com</div>
+                                <div class="head">Facebook</div>
+                                <div class="sub-title">facebook.com/ioptimicz</div>
                             </div>
                         </div>
-                        <!-- <div class="row">
-                            <i class="fa fa-map-marker"></i>
-                            <div class="info">
-                                <div class="head">Address</div>
-                                <div class="sub-title">Jombang, East Java, Indonesia</div>
-                            </div>
-                        </div> -->
                     </div>
                 </div>
                 <div class="column right">
@@ -269,7 +276,6 @@
                             </div>
                         </div>
                         <div class="field">
-                            <!-- <input type="text" placeholder="Subject" required> -->
                             <input type="text" name="subject" class="full_width" placeholder="Subject *" maxlength="100" required="">
                         </div>
                         <div class="field textarea">
@@ -282,7 +288,64 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
+
+
+    <!-- footer section start -->
+    <footer>
+        <!-- <div class="max-width"> -->
+        <!-- <span>Created By <a href="https://www.jowokode.com">JowoKode</a> | <span class="fa fa-copyright"></span> 2020</span> -->
+        <div class="main-content max-width">
+            <div class="left box">
+                <h2>About us</h2>
+                <div class="content">
+                    <p>JowoKode is a media where you can learn web designing, web development, ui/ux designing, html css tutorial, hover animation and effects, javascript and jquery tutorial and related so on.</p>
+                    <div class="social">
+                        <a href="https://facebook.com/ioptimicz"><span class="fa fa-facebook-f"></span></a>
+                        <a href="https://twitter.com/bro_irham"><span class="fa fa-twitter"></span></a>
+                        <a href="https://instagram.com/bro_irham"><span class="fa fa-instagram"></span></a>
+                        <a href="https://github.com/irchamali"><span class="fa fa-github"></span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="center box">
+                <h2>Address</h2>
+                <div class="content">
+                    <div class="place">
+                        <a class="fas fa-map-marker-alt"></a>
+                        <span class="text">Jombang, East Java</span>
+                    </div>
+                    <div class="phone">
+                        <a class="fas fa-phone-alt"></a>
+                        <span class="text">+62 85708497317</span>
+                    </div>
+                    <div class="email">
+                        <a class="fas fa-envelope"></a>
+                        <span class="text">admin@jowokode.com</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right box">
+                <?php echo $this->session->flashdata('msg'); ?>
+                <h2>Contact us</h2>
+                <div class="content text-left">
+                    <div class="text">Tertarik dengan pembuatan web ? Kirim pesan ke kami</div>
+                    <div class="">
+                        <a href="<?= base_url('/contact'); ?>" class="button">CLICK HERE</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- </div> -->
+        <div class="bottom">
+            <center>
+                <span class="credit">Created By <a href="https://jowokode.com">JowoKode</a> | </span>
+                <span class="far fa-copyright"></span><span> 2020 All rights reserved.</span>
+            </center>
+        </div>
+
+    </footer>
 
     <!-- Modal Search-->
     <div class="modal fade" id="ModalSearch" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="z-index: 10000;">
@@ -301,11 +364,6 @@
             </div>
         </div>
     </div>
-
-    <!-- footer section start -->
-    <footer>
-        <span>Created By <a href="https://www.jowokode.com">JowoKode</a> | <span class="fa fa-copyright"></span> 2020</span>
-    </footer>
 
     <script src="<?= base_url('theme/js/bootstrap.min.js') ?>"></script>
     <script src="<?= base_url('theme/js/script.js') ?>"></script>
