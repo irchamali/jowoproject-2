@@ -1932,37 +1932,38 @@
 
       // air mode: inline editor
       airMode: false,
-      // airPopover: [
-      //   ['style', ['style']],
-      //   ['font', ['bold', 'italic', 'underline', 'clear']],
-      //   ['fontname', ['fontname']],
-      //   ['color', ['color']],
-      //   ['para', ['ul', 'ol', 'paragraph']],
-      //   ['height', ['height']],
-      //   ['table', ['table']],
-      //   ['insert', ['link', 'picture']],
-      //   ['help', ['help']]
-      // ],
       airPopover: [
+        ['style', ['style']],
+        ['font', ['bold', 'italic', 'underline', 'clear']],
+        ['fontname', ['fontname']],
         ['color', ['color']],
-        ['font', ['bold', 'underline', 'clear']],
-        ['para', ['ul', 'paragraph']],
+        ['para', ['ul', 'ol', 'paragraph']],
+        ['height', ['height']],
         ['table', ['table']],
-        ['insert', ['link', 'picture']]
+        ['insert', ['link', 'picture']],
+        ['help', ['help']]
       ],
+      // airPopover: [
+      //   ['color', ['color']],
+      //   ['font', ['bold', 'underline', 'clear']],
+      //   ['fontname', ['fontname']],
+      //   ['para', ['ul', 'paragraph']],
+      //   ['table', ['table']],
+      //   ['insert', ['link', 'picture']]
+      // ],
 
       // style tag
       styleTags: ['p', 'blockquote', 'pre', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6'],
 
       // default fontName
-      defaultFontName: 'Helvetica Neue',
+      defaultFontName: 'Lucida Grande',
 
       // fontName
       fontNames: [
-        'Arial', 'Arial Black', 'Comic Sans MS', 'Courier New',
-        'Helvetica Neue', 'Impact', 'Lucida Grande',
-        'Tahoma', 'Times New Roman', 'Verdana'
+        'Arial', 'Arial Black', 'Comic Sans MS', 'Courier New','Helvetica Neue', 'Impact', 'Lucida Grande',
+        'Tahoma', 'Times New Roman', 'Verdana', 'Merriweather'
       ],
+      fontNamesIgnoreCheck: ['Merriweather'],
 
       // pallete colors(n x n)
       colors: [

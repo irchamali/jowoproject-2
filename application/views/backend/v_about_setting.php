@@ -26,7 +26,7 @@
     <link href="<?php echo base_url() . 'assets/plugins/datatables/css/jquery.datatables.min.css' ?>" rel="stylesheet" type="text/css" />
     <link href="<?php echo base_url() . 'assets/plugins/datatables/css/jquery.datatables_themeroller.css' ?>" rel="stylesheet" type="text/css" />
     <link href="<?php echo base_url() . 'assets/plugins/toastr/jquery.toast.min.css' ?>" rel="stylesheet" type="text/css" />
-    <link href="<?php echo base_url() . 'assets/plugins/summernote-master/summernote.css' ?>" rel="stylesheet" type="text/css" />
+    <link href="<?php echo base_url() . 'assets/plugins/sum/summernote-lite.min.css' ?>" rel="stylesheet" type="text/css" />
     <!-- Theme Styles -->
     <link href="<?php echo base_url() . 'assets/css/modern.min.css' ?>" rel="stylesheet" type="text/css" />
     <link href="<?php echo base_url() . 'assets/css/themes/green.css' ?>" class="theme-color" rel="stylesheet" type="text/css" />
@@ -277,14 +277,12 @@
                                             <img src="<?php echo base_url() . 'theme/images/' . $about_img; ?>" width="300" class="thumbnail">
                                         </div>
                                     </div>
-
                                     <div class="form-group">
                                         <label for="input1" class="col-sm-2 control-label">Description</label>
                                         <div class="col-sm-10">
                                             <textarea name="description" class="form-control" id="summernote" placeholder="Description"><?php echo $about_desc; ?></textarea>
                                         </div>
                                     </div>
-
                                     <div class="form-group">
                                         <input type="hidden" name="about_id" value="<?php echo $about_id ?>" required>
                                         <div class="col-sm-offset-2 col-sm-10">
@@ -325,7 +323,7 @@
     <script src="<?php echo base_url() . 'assets/plugins/datatables/js/jquery.datatables.min.js' ?>"></script>
     <script src="<?php echo base_url() . 'assets/js/modern.min.js' ?>"></script>
     <script src="<?php echo base_url() . 'assets/plugins/toastr/jquery.toast.min.js' ?>"></script>
-    <script src="<?php echo base_url() . 'assets/plugins/summernote-master/summernote.min.js' ?>"></script>
+    <script src="<?php echo base_url() . 'assets/plugins/sum/summernote-lite.min.js' ?>"></script>
 
     <script type="text/javascript">
         $(document).ready(function() {
@@ -334,6 +332,7 @@
                 toolbar: [
                     ['style', ['style']],
                     ['font', ['bold', 'italic', 'underline', 'clear']],
+                    ['fontname', ['fontname']],
                     ['fontsize', ['fontsize']],
                     ['color', ['color']],
                     ['para', ['ul', 'ol', 'paragraph']],

@@ -29,8 +29,9 @@ $b = $data->row_array();
     <link href="<?php echo base_url() . 'assets/plugins/slidepushmenus/css/component.css' ?>" rel="stylesheet" type="text/css" />
     <link href="<?php echo base_url() . 'assets/plugins/datatables/css/jquery.datatables.min.css' ?>" rel="stylesheet" type="text/css" />
     <link href="<?php echo base_url() . 'assets/plugins/datatables/css/jquery.datatables_themeroller.css' ?>" rel="stylesheet" type="text/css" />
-    <link href="<?php echo base_url() . 'assets/plugins/summernote-master/summernote.css' ?>" rel="stylesheet" type="text/css" />
-    <link href="<?php echo base_url() . 'assets/css/dropify.min.css' ?>" rel="stylesheet" type="text/css">
+    <!-- <link href="<?php echo base_url() . 'assets/plugins/summernote-master/summernote.css' ?>" rel="stylesheet" type="text/css" /> -->
+    <link href="<?php echo base_url() . 'assets/css/dropify.min.css' ?>" rel="stylesheet" type="text/css" media="screen,projection">
+    <link href="<?php echo base_url() . 'assets/plugins/sum/summernote-lite.min.css' ?>" rel="stylesheet">
 
     <!-- Theme Styles -->
     <link href="<?php echo base_url() . 'assets/css/modern.min.css' ?>" rel="stylesheet" type="text/css" />
@@ -279,9 +280,8 @@ $b = $data->row_array();
                                     </div>
                                     <div class="form-group">
                                         <label class="control-label">Contents</label>
-                                        <textarea name="contents" id="summernote"><?php echo $b['post_contents']; ?></textarea>
+                                        <textarea name="contents" id="summernote1"><?php echo $b['post_contents']; ?></textarea>
                                     </div>
-
 
                                 </div>
                             </div>
@@ -289,7 +289,6 @@ $b = $data->row_array();
 
                         <div class="col-md-4">
                             <div class="panel panel-white">
-
                                 <div class="panel-body">
                                     <div class="form-group">
                                         <label>Image</label>
@@ -352,6 +351,7 @@ $b = $data->row_array();
     </main><!-- Page Content -->
 
     <!-- Javascripts -->
+    <!-- jquery jquery-3.4.1.slim.min.js gak cocok untuk dropify lama, jd pakai yg 2.1.4 aja -->
     <script src="<?php echo base_url() . 'assets/plugins/jquery/jquery-2.1.4.min.js' ?>"></script>
     <script src="<?php echo base_url() . 'assets/plugins/jquery-ui/jquery-ui.min.js' ?>"></script>
     <script src="<?php echo base_url() . 'assets/plugins/pace-master/pace.min.js' ?>"></script>
@@ -369,14 +369,16 @@ $b = $data->row_array();
     <script src="<?php echo base_url() . 'assets/plugins/datatables/js/jquery.datatables.min.js' ?>"></script>
     <script src="<?php echo base_url() . 'assets/js/modern.min.js' ?>"></script>
     <script src="<?php echo base_url() . 'assets/js/dropify.min.js' ?>"></script>
-    <script src="<?php echo base_url() . 'assets/plugins/summernote-master/summernote.min.js' ?>"></script>
+
+    <script src="<?php echo base_url() . 'assets/plugins/sum/summernote-lite.min.js' ?>"></script>
     <script>
         $(document).ready(function() {
-            $('#summernote').summernote({
+            $('#summernote1').summernote({
                 height: 590,
                 toolbar: [
                     ['style', ['style']],
                     ['font', ['bold', 'italic', 'underline', 'clear']],
+                    ['fontname', ['fontname']],
                     ['fontsize', ['fontsize']],
                     ['color', ['color']],
                     ['para', ['ul', 'ol', 'paragraph']],

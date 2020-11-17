@@ -25,8 +25,9 @@
     <link href="<?php echo base_url() . 'assets/plugins/slidepushmenus/css/component.css' ?>" rel="stylesheet" type="text/css" />
     <link href="<?php echo base_url() . 'assets/plugins/datatables/css/jquery.datatables.min.css' ?>" rel="stylesheet" type="text/css" />
     <link href="<?php echo base_url() . 'assets/plugins/datatables/css/jquery.datatables_themeroller.css' ?>" rel="stylesheet" type="text/css" />
-    <link href="<?php echo base_url() . 'assets/plugins/summernote-master/summernote.css' ?>" rel="stylesheet" type="text/css" />
     <link href="<?php echo base_url() . 'assets/css/dropify.min.css' ?>" rel="stylesheet" type="text/css">
+    <!-- <link href="<?php echo base_url() . 'assets/plugins/summernote-master/summernote.css' ?>" rel="stylesheet" type="text/css" /> -->
+    <link href="<?php echo base_url() . 'assets/plugins/sum/summernote-lite.min.css' ?>" rel="stylesheet">
 
     <!-- Theme Styles -->
     <link href="<?php echo base_url() . 'assets/css/modern.min.css' ?>" rel="stylesheet" type="text/css" />
@@ -266,9 +267,7 @@
                     <form action="<?php echo base_url() . 'backend/post/publish' ?>" method="post" enctype="multipart/form-data">
                         <div class="col-md-8">
                             <div class="panel panel-white">
-
                                 <div class="panel-body">
-
                                     <div class="form-group">
                                         <label>Title</label>
                                         <input type="text" name="title" class="form-control title" placeholder="Title" required>
@@ -280,15 +279,12 @@
                                         <label class="control-label">Contents</label>
                                         <textarea name="contents" id="summernote"></textarea>
                                     </div>
-
-
                                 </div>
                             </div>
                         </div>
 
                         <div class="col-md-4">
                             <div class="panel panel-white">
-
                                 <div class="panel-body">
                                     <div class="form-group">
                                         <label>Image</label>
@@ -342,6 +338,7 @@
 
     <!-- Javascripts -->
     <script src="<?php echo base_url() . 'assets/plugins/jquery/jquery-2.1.4.min.js' ?>"></script>
+
     <script src="<?php echo base_url() . 'assets/plugins/jquery-ui/jquery-ui.min.js' ?>"></script>
     <script src="<?php echo base_url() . 'assets/plugins/pace-master/pace.min.js' ?>"></script>
     <script src="<?php echo base_url() . 'assets/plugins/jquery-blockui/jquery.blockui.js' ?>"></script>
@@ -358,15 +355,16 @@
     <script src="<?php echo base_url() . 'assets/plugins/datatables/js/jquery.datatables.min.js' ?>"></script>
     <script src="<?php echo base_url() . 'assets/js/modern.min.js' ?>"></script>
     <script src="<?php echo base_url() . 'assets/js/dropify.min.js' ?>"></script>
-    <script src="<?php echo base_url() . 'assets/plugins/summernote-master/summernote.min.js' ?>"></script>
+
+    <script src="<?php echo base_url() . 'assets/plugins/sum/summernote-lite.min.js' ?>"></script>
     <script>
         $(document).ready(function() {
-
             $('#summernote').summernote({
                 height: 590,
                 toolbar: [
                     ['style', ['style']],
                     ['font', ['bold', 'italic', 'underline', 'clear']],
+                    ['fontname', ['fontname']],
                     ['fontsize', ['fontsize']],
                     ['color', ['color']],
                     ['para', ['ul', 'ol', 'paragraph']],
@@ -377,7 +375,6 @@
                 onImageUpload: function(files, editor, welEditable) {
                     sendFile(files[0], editor, welEditable);
                 }
-
             });
 
             function sendFile(file, editor, welEditable) {
@@ -395,8 +392,6 @@
                     }
                 });
             }
-
-
 
             $('.dropify').dropify({
                 messages: {
