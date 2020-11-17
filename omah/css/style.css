@@ -10,7 +10,48 @@
 html{
     scroll-behavior: smooth;
 }
- 
+
+body {
+    --text-color: #222;
+    --bkg-color: #fff;
+    
+  }
+  body.dark-theme {
+    --text-color: #eee;
+    --bkg-color: #121212;
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    /* defaults to dark theme */
+    body {
+      --text-color: #eee;
+      --bkg-color: #121212;
+    }
+    body.light-theme {
+      --text-color: #222;
+      --bkg-color: #fff;
+    }
+  }
+  
+  * {    
+    font-family: 'Ubuntu', sans-serif;
+  }
+  
+  body {
+    background: var(--bkg-color);
+    
+  }
+  
+  h1,
+  .text,
+  .text-1,
+  .text-2,
+  .text-3,
+  .title,
+  p {
+    color: var(--text-color);
+  }
+
 /* custom scroll bar */
 ::-webkit-scrollbar {
     width: 10px;
@@ -125,42 +166,6 @@ section .title::after{
 .navbar.sticky .menu li a:hover{
     color: #ffff00;
 }
-/* .navbar .menu ul li a:hover{
-    box-shadow: none;
-}
-.navbar .menu ul{
-    position: absolute;
-    top: 90px;
-    border-top: 3px solid #ffff00;
-    opacity: 0;
-    visibility: hidden;
-    transition: top .3s;
-}
-.navbar .menu ul ul{
-    border-top: none;
-}
-.navbar .menu li:hover > ul{
-    top: 70px;
-    opacity: 1;
-    visibility: visible;
-}
-.navbar .menu ul li{
-    position: relative;
-    margin: 0px;
-    width: 150px;
-    float: none;
-    display: list-item;
-    border-bottom: 1px solid rgba(0,0,0,0.3);
-}
-.navbar .menu ul li a{
-    line-height: 50px;
-}
-.navbar .menu ul ul li{
-    position: relative;
-    top: -60px;
-    left: 150px;
-} */
-
 
 
 /* menu btn styling */
@@ -200,11 +205,11 @@ section .title::after{
 
   
 /* home section styling */
-.home{
+ body .home{
+    /* color: #fff;
+    background: #111 no-repeat center; */
     display: flex;
-    background: url("../images/banner2.jpg") no-repeat center;
     height: 100vh;
-    color: #fff;
     min-height: 500px;
     background-size: cover;
     background-attachment: fixed;
@@ -225,38 +230,38 @@ section .title::after{
     font-size: 40px;
     margin: 5px 0;
 }
-.home .home-content .text-3 span{
+.home .home-content .text-2 span{
     color: #ffff00;
-    font-weight: 500;
+    /* font-weight: 100; */
 }
-.home .home-content a{
+.home .home-content .btn-toggle{
     display: inline-block;
     background: #ffff00;
     color: #111;
     font-size: 25px;
-    padding: 12px 36px;
+    padding: 15px 25px;
     margin-top: 20px;
     font-weight: 400;
-    border-radius: 6px;
-    border: 2px solid #ffff00;
+    border-radius: 100%;
+    border: 1px solid #ffff00;
     transition: all 0.3s ease;
 }
-.home .home-content a:hover{
+.home .home-content .btn-toggle:hover{
     color: #ffff00;
     background: none;
 }
 
 /* about section styling */
-.about{
+/* .about{
     color:#fff;
     background: #111;
-}
+} */
 .about .title::before{
     background: #fff;
 }
 .about .title::after{
-    background: #111;
-    content: "kenalan dulu";
+    background: rgba(15, 0, 0, 0.5);
+    content: "kenalan";
 }
 .about .about-content .left{
     width: 45%;
@@ -272,14 +277,15 @@ section .title::after{
 }
 .about .about-content .right .text{
     font-size: 25px;
-    font-weight: 600;
+    font-weight: 300;
     margin-bottom: 10px;
 }
 .about .about-content .right .text span{
     color: #888;
 }
 .about .about-content .right p{
-    font-size: 18px;
+    color: #111;
+    font-size: 24px;
     text-align: justify;
 }
 .about .about-content .right a{
@@ -300,27 +306,21 @@ section .title::after{
 }
 
 /* services section styling */
-.services{
+/* .services{
     color:#fff;
     background: #111;
-    /* display: flex;
-    background: url("../images/banner2.jpg") no-repeat center;
-    height: 100vh;
-    color: #fff;
-    min-height: 500px;
-    background-size: cover;
-    background-attachment: fixed; */
-}
+    
+} */
 .services .title::before{
     background: #fff;
 }
 .services .title::after{
-    background: #111;
-    content: "belajar dari dasar";
+    background: rgba(15, 0, 0, 0.5);
+    content: "belajar";
 }
 .services .serv-content .card{
     width: calc(33% - 20px);
-    background: #222;
+    background: rgba(15, 0, 0, 0.5);
     text-align: center;
     border-radius: 6px;
     padding: 20px 25px;
@@ -329,7 +329,7 @@ section .title::after{
     margin-bottom: 20px;
 }
 .services .serv-content .card:hover{
-    background: #4070F4;
+    background: #ffff00;
 }
 .services .serv-content .card .box{
     transition: all 0.3s ease;
@@ -443,22 +443,22 @@ section .title::after{
 } */
 
 /* teams section styling */
-.teams{
+/* .teams{
     color:#fff;
     background: #111;
-}
+} */
 
 .teams .title::before{
     background: #fff;
 }
 
 .teams .title::after{
-    background: #111;
-    content: "beberapa proyek";
+    background: rgba(15, 0, 0, 0.5);
+    content: "karya";
 }
 
 .teams .carousel .card{
-    background: #222;
+    background: rgba(15, 0, 0, 0.5);
     border-radius: 6px;
     padding: 25px 35px;
     text-align: center;
@@ -466,7 +466,7 @@ section .title::after{
     transition: all 0.3s ease;
 }
 .teams .carousel .card:hover{
-    background:  #4070F4;
+    background:  #ffff00;
 }
 .teams .carousel .card .box{
     display: flex;
@@ -782,6 +782,10 @@ footer span a:hover{
     bottom: 0px;
     width: 100%;
     background: #222;
+    color: #fff;
+  }
+  footer span{
+      color: #ffff00;
   }
   .main-content{
     display: flex;

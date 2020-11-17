@@ -35,14 +35,7 @@ $(document).ready(function(){
 
     // typing text animation script
     var typed = new Typed(".typing", {
-        strings: ["Sugeng Rawuh", "Selamat Datang", "Welcome Home"],
-        typeSpeed: 100,
-        backSpeed: 60,
-        loop: true
-    });
-
-    var typed = new Typed(".typing-2", {
-        strings: ["Personal Blog", "Landing Page", "Portfolio", "Business Web", "Company Profile"],
+        strings: ["Rek", "Bro", "Lur", "Guys"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true

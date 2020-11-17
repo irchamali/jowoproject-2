@@ -42,6 +42,7 @@
     <script src="<?= base_url('omah/js/owl.carousel.min.js'); ?>"></script>
     <link rel="stylesheet" href="<?= base_url('omah/css/owl.carousel.min.css'); ?>" />
     <link rel="stylesheet" href="<?php echo base_url('theme/css/font-awesome.min.css'); ?>" />
+
     <!-- <script src="https://kit.fontawesome.com/a076d05399.js"></script> -->
     <!-- <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> -->
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
@@ -57,7 +58,7 @@
     </div>
     <nav class="navbar">
         <div class="max-width">
-            <div class="logo"><a href="#">Jowo<span>Kode</span></a></div>
+            <div class="logo"><a href="#">J<span>.</span></a></div>
             <ul class="menu">
                 <li><a href="#home" class="menu-btn">Home</a></li>
                 <li><a href="#about" class="menu-btn">About</a></li>
@@ -78,11 +79,14 @@
     <section class="home" id="home">
         <div class="max-width">
             <div class="home-content">
-                <div class="text-1">Hallo, Dulur-dulur</div>
-                <div class="text-2"><span class="typing"></span></div>
-                <div class="text-3">Jowo<span>Kode</span> | Web Dev.</div>
-                <!-- <div class="text-1">Irham | Founder</div> -->
-                <a href="https://api.whatsapp.com/send?phone=6285708497317">Hire me</a>
+                <div class="text-2">Hallo <span>&#128075;</span>, <span class="typing"></span></div>
+                <div class="text-3">Salam kenal, kami sebuah media pemula yang lagi enjoy belajar web.
+                    Di sini kamu bisa baca tulisan semi-jowo atau lihat secuil portofolio pembuatan web <span>&#129300;</span> </div>
+                <div id="theme" class="btn-toggle">
+                    <div onclick="setDarkMode(true)" id="darkBtn" class=""><span><abbr title="Dark Mode"><i class="fas fa-moon"></i></abbr></span></div>
+                    <div onclick="setDarkMode(false)" id="lightBtn" class="is-hidden"> <span><abbr title="Light Mode"><i class="fas fa-sun"></i></abbr></span> </div>
+                </div>
+                <!-- <a href="https://api.whatsapp.com/send?phone=6285708497317">Hire me</a> -->
             </div>
         </div>
     </section>
@@ -96,9 +100,8 @@
                     <img src="<?= base_url() . 'theme/images/' . $about_img; ?>">
                 </div>
                 <div class="column right">
-                    <p><?php echo $about_desc; ?></p>
-                    <div class="text">Kami melayani pembuatan <span class="typing-2"></span> <i class="fa fa-smile"></i></div>
-
+                    <h3 class="text-1 text-justify"><?php echo $about_desc; ?></h3>
+                    <!-- <div class="text-1">Kami melayani pembuatan <span class="typing"></span> <i class="fa fa-smile"></i></div> -->
                 </div>
             </div>
         </div>
@@ -338,11 +341,9 @@
             </div>
         </div>
         <!-- </div> -->
-        <div class="bottom">
-            <center>
-                <span class="credit">Created By <a href="https://jowokode.com">JowoKode</a> | </span>
-                <span class="far fa-copyright"></span><span> 2020 All rights reserved.</span>
-            </center>
+        <div class="bottom text-center">
+            <span class="credit"><a href="https://jowokode.com">JowoKode</a> </span>
+            &copy; 2020 All rights reserved.
         </div>
 
     </footer>
@@ -368,6 +369,23 @@
     <script src="<?= base_url('theme/js/bootstrap.min.js') ?>"></script>
     <script src="<?= base_url('theme/js/script.js') ?>"></script>
     <script src="<?= base_url('omah/js/script.js'); ?>"></script>
+    <script src="<?= base_url('omah/js/darkmode.js'); ?>"></script>
+    <script>
+        function setDarkMode(isDark) {
+            var darkBtn = document.getElementById('darkBtn')
+            var lightBtn = document.getElementById('lightBtn')
+
+            if (isDark) {
+                lightBtn.style.display = "block"
+                darkBtn.style.display = "none"
+            } else {
+                lightBtn.style.display = "none"
+                darkBtn.style.display = "block"
+            }
+
+            document.body.classList.toggle("darkmode");
+        }
+    </script>
 </body>
 
 </html>
