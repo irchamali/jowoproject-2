@@ -48,7 +48,7 @@
                     </a>
                 </div>
                 <div class="logo-box">
-                    <a href="<?php echo site_url('backend/dashboard'); ?>" class="logo-text"><span>BABAD</span></a>
+                    <a href="<?php echo site_url('backend/dashboard'); ?>" class="logo-text"><span>JOWO</span></a>
                 </div><!-- Logo Box -->
                 <div class="topmenu-outer">
                     <div class="top-menu">
@@ -264,7 +264,7 @@
                             <div class="panel-body">
 
                                 <div class="table-responsive">
-                                    <table id="data-table" class="display table" style="width: 100%; cellspacing: 0;">
+                                    <table id="data-table" class="display table" style="width: 100%; ">
                                         <thead>
                                             <tr>
                                                 <th style="width: 100px;">No</th>

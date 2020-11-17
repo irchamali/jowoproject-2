@@ -52,7 +52,7 @@
                     </a>
                 </div>
                 <div class="logo-box">
-                    <a href="<?php echo site_url('backend/dashboard'); ?>" class="logo-text"><span>BABAD</span></a>
+                    <a href="<?php echo site_url('backend/dashboard'); ?>" class="logo-text"><span>JOWO</span></a>
                 </div><!-- Logo Box -->
                 <div class="search-button">
                     <a href="javascript:void(0);" class="waves-effect waves-button waves-classic show-search"><i class="fa fa-search"></i></a>
@@ -263,7 +263,7 @@
                             <div class="panel-body">
                                 <button type="button" class="btn btn-success m-b-sm" data-toggle="modal" data-target="#myModal">Add New User</button>
 
-                                <table id="mytable" class="display table" style="width: 100%; cellspacing: 0;">
+                                <table id="mytable" class="display table" style="width: 100%; ">
                                     <thead>
                                         <tr>
                                             <th>No</th>

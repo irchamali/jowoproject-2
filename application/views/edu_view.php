@@ -68,9 +68,7 @@
 				================================================== 	-->
 			<section class="page-section small-section">
 				<div class="container relative">
-
 					<div class="row multi-columns-row">
-
 						<?php foreach ($data->result() as $row) : ?>
 							<div class="col-md-4 col-sm-6 mb-30 wow fadeIn">
 								<article>
@@ -95,7 +93,6 @@
 								</article>
 							</div>
 						<?php endforeach; ?>
-
 					</div>
 					<!--pagination-->
 					<?php echo $page; ?>
@@ -104,7 +101,7 @@
 
 			<!-- SECTION SUBSCRIBE
 				================================================== -->
-			<section class="page-section subscribe-section small-section">
+			<!-- <section class="page-section subscribe-section small-section">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-10 col-md-offset-1">
@@ -126,7 +123,7 @@
 						</div>
 					</div>
 				</div>
-			</section>
+			</section> -->
 
 			<!-- FOOTER
 				================================================== -->

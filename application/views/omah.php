@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Page header -->
     <meta charset="utf-8" />
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
-    <meta name="author" content="" />
+    <meta name="description" content="Personal Web | Pengembangan Web" />
+    <meta name="keywords" content="Jowo Kode" />
+    <meta name="author" content="Ircham Ali" />
     <!-- Page title -->
     <title><?= $site_title; ?></title>
     <link rel="shortcut icon" href="<?= base_url('theme/images/' . $icon); ?>">
@@ -58,7 +58,7 @@
     </div>
     <nav class="navbar">
         <div class="max-width">
-            <div class="logo"><a href="#">J<span>.</span></a></div>
+            <div class="logo"><a href="#"><img src="<?php echo base_url() . 'theme/images/' . $logo; ?>" width="130" height="35" alt=""></a></div>
             <ul class="menu">
                 <li><a href="#home" class="menu-btn">Home</a></li>
                 <li><a href="#about" class="menu-btn">About</a></li>
@@ -80,7 +80,7 @@
         <div class="max-width">
             <div class="home-content">
                 <div class="text-2">Hallo <span>&#128075;</span>, <span class="typing"></span></div>
-                <div class="text-3">Salam kenal, kami sebuah media pemula yang lagi enjoy belajar web.
+                <div class="text-3">Salam kenal, dari media pemula yang lagi enjoy belajar web.
                     Di sini kamu bisa baca tulisan semi-jowo atau lihat secuil portofolio pembuatan web <span>&#129300;</span> </div>
                 <div id="theme" class="btn-toggle">
                     <div onclick="setDarkMode(true)" id="darkBtn" class=""><span><abbr title="Dark Mode"><i class="fas fa-moon"></i></abbr></span></div>
@@ -100,7 +100,7 @@
                     <img src="<?= base_url() . 'theme/images/' . $about_img; ?>">
                 </div>
                 <div class="column right">
-                    <h3 class="text-1 text-justify"><?php echo $about_desc; ?></h3>
+                    <div class="text-4 text-justify"><?php echo $about_desc; ?></div>
                     <!-- <div class="text-1">Kami melayani pembuatan <span class="typing"></span> <i class="fa fa-smile"></i></div> -->
                 </div>
             </div>
@@ -155,57 +155,6 @@
         </div>
         </div>
     </section>
-
-    <!-- skills section start -->
-    <!-- <section class="skills" id="skills">
-        <div class="max-width">
-            <h2 class="title">Skills</h2>
-            <div class="skills-content">
-                <div class="column left">
-                    <div class="text">Our creative skills & experiences.</div>
-                    <p>JowoKode memfasilitasi para dulur-dulur customer berdasarkan pada keahlian dan pengalaman pembuatan web secara kreatif. Teknologi yang digunakan dalam pengembangan sistem informasi berbentuk website seperti HTML, CSS, Javascript, PHP, dan MySQL. Pembuatan Web juga menawarkan kemudahan dengan CMS (Content management system) bagi yang berminat. JowoKode berkomitmen untuk melayani dengan sentuhan keramahan jawa.</p>
-                    <a href="#">Read more</a>
-                </div>
-                <div class="column right">
-                    <div class="bars">
-                        <div class="info">
-                            <span>HTML</span>
-                            <span>90%</span>
-                        </div>
-                        <div class="line html"></div>
-                    </div>
-                    <div class="bars">
-                        <div class="info">
-                            <span>CSS</span>
-                            <span>60%</span>
-                        </div>
-                        <div class="line css"></div>
-                    </div>
-                    <div class="bars">
-                        <div class="info">
-                            <span>JavaScript</span>
-                            <span>80%</span>
-                        </div>
-                        <div class="line js"></div>
-                    </div>
-                    <div class="bars">
-                        <div class="info">
-                            <span>PHP</span>
-                            <span>50%</span>
-                        </div>
-                        <div class="line php"></div>
-                    </div>
-                    <div class="bars">
-                        <div class="info">
-                            <span>MySQL</span>
-                            <span>70%</span>
-                        </div>
-                        <div class="line mysql"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
 
     <!-- teams section start -->
     <section class="teams" id="teams">

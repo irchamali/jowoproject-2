@@ -60,13 +60,16 @@
 							<div class="blog-item clearfix">
 								<!--POST LEAVE COMMENT-->
 								<div class="comments-heading text-center mb-30">
+									<div class="shadow-title shadow-gray unselectable parallax-1">PESAN</div>
 									<hgroup>
-										<h2 class="font-face1 section-heading">Contact me</h2>
+										<h2 class="font-face1 section-heading">Contact</h2>
+										<h4 class="font-face1 section-heading">Kirim pesan ke kami</h4>
 									</hgroup>
 								</div>
 								<?php echo $this->session->flashdata('msg'); ?>
 								<form method="post" action="<?php echo site_url('contact/send'); ?>" role="form" class="form">
 									<div class="row">
+
 										<div class="col-md-6">
 											<div class="form-group">
 												<input type="text" name="name" class="full_width" placeholder="Name *" maxlength="100" required="">

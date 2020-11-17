@@ -51,7 +51,7 @@
 			<!-- SECTION ABOUT
 				================================================== 	-->
 			<section class="page-section small-section">
-				<div class="shadow-title shadow-gray unselectable parallax-1">About</div>
+				<div class="shadow-title shadow-gray unselectable parallax-1">PROFIL</div>
 				<div class="container relative">
 					<div class="row">
 						<div class="col-md-6 col-md-offset-3 mb-10 mb-sm-40 text-center">
@@ -65,7 +65,6 @@
 							<div class="blog-item clearfix">
 								<img src="<?php echo base_url() . 'theme/images/' . $about_img; ?>">
 							</div>
-							<br><br>
 
 							<!-- <iframe width="100%" height="215" src="https://www.youtube.com/embed/5wk8ica7tRg?start=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
 						</div>

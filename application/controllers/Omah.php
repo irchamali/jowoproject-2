@@ -38,7 +38,7 @@ class Omah extends CI_Controller
         $about = $this->db->get('tbl_about', 1)->row();
         $data['about_img'] = $about->about_image;
         $data['about_desc'] = $about->about_description;
-        $v['logo'] =  $site_info->site_logo_header;
+        $data['logo'] =  $site_info->site_logo_header;
         $data['icon'] = $site_info->site_favicon;
 
         // $data['header'] = $this->load->view('head', $v, TRUE);
