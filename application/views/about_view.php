@@ -20,7 +20,15 @@
 	<!-- Favicons -->
 	<link rel="shortcut icon" href="<?php echo base_url('theme/images/' . $icon); ?>">
 	<link rel="stylesheet" href="<?php echo base_url() . 'theme/css/font-awesome.min.css' ?>" />
+	<script>
+		window.dataLayer = window.dataLayer || [];
 
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+		gtag('config', 'UA-98864351-2');
+	</script>
 </head>
 
 <body class="content-animate">
@@ -107,7 +115,7 @@
 				</div>
 			</section> -->
 
-			<hr class="nomargin nopadding" />
+			<hr class="nomargin nopadding light" />
 
 			<!-- FOOTER
 				================================================== -->
@@ -156,6 +164,27 @@
 	<script src="<?php echo base_url('theme/js/wow.min.js') ?>"></script>
 	<script src="<?php echo base_url('theme/js/script.js') ?>"></script>
 	<script src="<?php echo base_url('theme/js/jssocials.min.js') ?>"></script>
+	<script>
+		//check localstorage
+		if (localStorage.getItem('preferredTheme') == 'dark')
+			toggleDarkMode()
+
+		function toggleDarkMode() {
+			const themeBtn = document.getElementById('themeBtn')
+			let emoticon = ""
+			let isDark = document.body.classList.toggle("darkmode")
+
+			if (isDark) {
+				emoticon = "🌝"
+				localStorage.setItem('preferredTheme', 'dark');
+			} else {
+				emoticon = "🌚"
+				localStorage.removeItem('preferredTheme');
+			}
+
+			themeBtn.innerHTML = emoticon
+		}
+	</script>
 
 </body>
 

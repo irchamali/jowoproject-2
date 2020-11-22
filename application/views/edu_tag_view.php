@@ -38,6 +38,15 @@
 	<link rel="stylesheet" href="<?php echo base_url() . 'theme/css/padding-margin.css' ?>" />
 	<link rel="stylesheet" href="<?php echo base_url() . 'theme/css/font-awesome.min.css' ?>" />
 	<!-- Favicons -->
+	<script>
+		window.dataLayer = window.dataLayer || [];
+
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+		gtag('config', 'UA-98864351-2');
+	</script>
 </head>
 
 <body class="content-animate">
@@ -81,6 +90,7 @@
 											</div>
 											<div class="card-body text-right">
 												<h2 class="heading6 lp-0 mt-0 font-face1 text-right"><?php echo $row->post_title; ?></h2>
+												<p class="text-justify"><?= substr($row->post_description, 0, 55); ?>..</p>
 											</div>
 											<div class="card-footer">
 												<div class="article_author">
@@ -173,6 +183,27 @@
 	<script src="<?php echo base_url() . 'theme/js/slick.min.js' ?>"></script>
 	<script src="<?php echo base_url() . 'theme/js/wow.min.js' ?>"></script>
 	<script src="<?php echo base_url() . 'theme/js/script.js' ?>"></script>
+	<script>
+		//check localstorage
+		if (localStorage.getItem('preferredTheme') == 'dark')
+			toggleDarkMode()
+
+		function toggleDarkMode() {
+			const themeBtn = document.getElementById('themeBtn')
+			let emoticon = ""
+			let isDark = document.body.classList.toggle("darkmode")
+
+			if (isDark) {
+				emoticon = "🌝"
+				localStorage.setItem('preferredTheme', 'dark');
+			} else {
+				emoticon = "🌚"
+				localStorage.removeItem('preferredTheme');
+			}
+
+			themeBtn.innerHTML = emoticon
+		}
+	</script>
 </body>
 
 </html>

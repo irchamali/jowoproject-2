@@ -919,7 +919,7 @@ footer span{
     font-size: 0.9375rem;
     background: #151515;
 }
-footer .bottom span{
+footer .bottom span a{
     color: #ffff00;
 }
 .bottom center span{

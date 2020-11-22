@@ -40,6 +40,17 @@
 	<meta name="twitter:title" content="<?php echo $title; ?>" />
 	<meta name="twitter:site" content="<?php echo $site_twitter; ?>" />
 	<meta name="twitter:image" content="<?php echo base_url() . 'assets/images/' . $image; ?>" />
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script>
+		window.dataLayer = window.dataLayer || [];
+
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+		gtag('config', 'UA-98864351-2');
+	</script>
 	<!-- / End SEO Tags. -->
 </head>
 
@@ -64,9 +75,7 @@
 
 		<!-- Main Content
 			==================================================-->
-		<main class="cd-main-content mt-100">
-
-
+		<main class="cd-main-content mt-50">
 
 			<!-- SECTION ABOUT
 				================================================== 	-->
@@ -94,7 +103,6 @@
 									<span class="separator">&vert;</span>
 									<span><a href="javascript:void(0)"><i class="fa fa-comments"></i> <?php echo number_format($comment); ?> Comments</a></span>
 								</div>
-
 
 								<!--POST MEDIA-->
 								<div class="blog-media">
@@ -124,12 +132,10 @@
 
 								</div>
 
-
 								<!--POST COMMENT-->
 								<div class="comments-heading text-center mb-30 mt-60">
 									<hgroup>
 										<h2 class="font-face1 section-heading"><?php echo $comment; ?> Comments</h2>
-
 									</hgroup>
 								</div>
 
@@ -215,7 +221,7 @@
 											</div>
 										</div>
 										<div class="col-md-12 center-xs">
-											<button type="submit" class="btn bg-black white-color">
+											<button type="submit" class="btn bg-black font-color">
 												Submit comment
 											</button>
 										</div>
@@ -257,7 +263,7 @@
 			</section> -->
 
 
-			<hr class="nomargin nopadding" />
+			<hr class="nomargin nopadding light" />
 
 			<!-- FOOTER
 				================================================== -->
@@ -306,6 +312,27 @@
 	<script src="<?php echo base_url('theme/js/wow.min.js') ?>"></script>
 	<script src="<?php echo base_url('theme/js/script.js') ?>"></script>
 	<script src="<?php echo base_url('theme/js/jssocials.min.js') ?>"></script>
+	<script>
+		//check localstorage
+		if (localStorage.getItem('preferredTheme') == 'dark')
+			toggleDarkMode()
+
+		function toggleDarkMode() {
+			const themeBtn = document.getElementById('themeBtn')
+			let emoticon = ""
+			let isDark = document.body.classList.toggle("darkmode")
+
+			if (isDark) {
+				emoticon = "🌝"
+				localStorage.setItem('preferredTheme', 'dark');
+			} else {
+				emoticon = "🌚"
+				localStorage.removeItem('preferredTheme');
+			}
+
+			themeBtn.innerHTML = emoticon
+		}
+	</script>
 	<script>
 		$(document).ready(function() {
 			$(".SocialShareArticle").jsSocials({

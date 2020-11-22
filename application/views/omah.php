@@ -1,21 +1,18 @@
 <!DOCTYPE html>
-<!-- Created By CodingNepal -->
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Page header -->
-    <meta charset="utf-8" />
-    <meta name="description" content="Personal Web | Pengembangan Web" />
-    <meta name="keywords" content="Jowo Kode" />
-    <meta name="author" content="Ircham Ali" />
     <!-- Page title -->
     <title><?= $site_title; ?></title>
+    <!-- Page header -->
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="Jowo Kode" />
+    <meta name="author" content="Ircham Ali" />
+    <!-- Favicon -->
     <link rel="shortcut icon" href="<?= base_url('theme/images/' . $icon); ?>">
-    <link rel="stylesheet" href="<?= base_url('theme/css/bootstrap.min.css') ?>" />
-    <link rel="stylesheet" href="<?= base_url('omah/css/style.css'); ?>">
-
     <!-- SEO Tag -->
     <meta name="description" content="<?php echo $site_desc; ?>" />
     <link rel="canonical" href="<?php echo site_url(); ?>" />
@@ -34,21 +31,24 @@
     <meta name="twitter:title" content="<?php echo $site_title; ?>" />
     <meta name="twitter:site" content="<?php echo $site_twitter; ?>" />
     <meta name="twitter:image" content="<?php echo base_url() . 'theme/images/' . $site_image ?>" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="<?= base_url('theme/css/bootstrap.min.css') ?>" />
+    <link rel="stylesheet" href="<?= base_url('omah/css/style.css'); ?>">
+    <link rel="stylesheet" href="<?= base_url('omah/css/owl.carousel.min.css'); ?>" />
+    <link rel="stylesheet" href="<?= base_url('theme/css/font-awesome.min.css'); ?>" />
 
     <script src="<?= base_url('omah/js/a076d05399.js'); ?>"></script>
     <script src="<?= base_url('omah/js/jquery-3.5.1.min.js'); ?>"></script>
-    <script src="<?= base_url('omah/js/typed.min.js'); ?>"></script>
+    <!-- <script src="<?= base_url('omah/js/typed.min.js'); ?>"></script> -->
     <script src="<?= base_url('omah/js/jquery.waypoints.min.js'); ?>"></script>
     <script src="<?= base_url('omah/js/owl.carousel.min.js'); ?>"></script>
-    <link rel="stylesheet" href="<?= base_url('omah/css/owl.carousel.min.css'); ?>" />
-    <link rel="stylesheet" href="<?php echo base_url('theme/css/font-awesome.min.css'); ?>" />
 
     <!-- <script src="https://kit.fontawesome.com/a076d05399.js"></script> -->
     <!-- <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" /> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" /> -->
 
 </head>
 
@@ -79,7 +79,7 @@
     <section class="home" id="home">
         <div class="max-width">
             <div class="home-content">
-                <div class="text-2">Hallo <span>&#128075;</span>, <span class="typing"></span></div>
+                <div class="text-1">Hi<span>&#128075;</span>, <span class="typing"></span></div>
                 <div class="text-3">Salam kenal, dari media pemula yang lagi enjoy belajar web.
                     Di sini kamu bisa baca tulisan semi-jowo atau lihat secuil portofolio pembuatan web <span>&#129300;</span> </div>
                 <div id="theme" class="btn-toggle">
@@ -114,13 +114,13 @@
             <div class="serv-content">
                 <div class="card">
                     <div class="box">
-                        <i class="fa fa-html5"></i>
+                        <i class="fab fa-html5"></i>
                         <div class="text">HTML 5</div>
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
-                        <i class="fa fa-css3"></i>
+                        <i class="fab fa-css3"></i>
                         <div class="text">CSS 3</div>
                     </div>
                 </div>
@@ -253,10 +253,10 @@
                 <div class="content">
                     <p>JowoKode is a media where you can learn web designing, web development, ui/ux designing, html css tutorial, hover animation and effects, javascript and jquery tutorial and related so on.</p>
                     <div class="social">
-                        <a href="https://facebook.com/ioptimicz"><span class="fa fa-facebook-f"></span></a>
-                        <a href="https://twitter.com/bro_irham"><span class="fa fa-twitter"></span></a>
-                        <a href="https://instagram.com/bro_irham"><span class="fa fa-instagram"></span></a>
-                        <a href="https://github.com/irchamali"><span class="fa fa-github"></span></a>
+                        <a href="https://facebook.com/ioptimicz"><span class="fab fa-facebook-f"></span></a>
+                        <a href="https://twitter.com/bro_irham"><span class="fab fa-twitter"></span></a>
+                        <a href="https://instagram.com/bro_irham"><span class="fab fa-instagram"></span></a>
+                        <a href="https://github.com/irchamali"><span class="fab fa-github"></span></a>
                     </div>
                 </div>
             </div>

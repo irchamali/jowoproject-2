@@ -7,6 +7,7 @@
 								<img src="<?php echo base_url() . 'theme/images/' . $logo; ?>" width="145" height="40" alt="" />
 							</a>
 						</div>
+						<a href="#" onclick="toggleDarkMode()" id="themeBtn" class="project-logo h3 mb-10">🌚</a> &nbsp;
 						<!-- Mobile nav bars -->
 						<div class="mobile-nav">
 							<i class="fa fa-bars"></i>

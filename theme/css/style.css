@@ -87,7 +87,8 @@ html, body{
 	-webkit-font-smoothing: antialiased;
 }
 body {
-    font-family: 'Lato', sans-serif;;
+	font-family: 'Lato', sans-serif;;
+	background: #fff;
 	color:#212121;
 	font-weight:400;
 	font-size: 1.5em;
@@ -97,6 +98,46 @@ body {
 	-webkit-text-size-adjust: 100%;
 	backface-visibility: hidden;
 }
+body.darkmode nav,
+body.darkmode nav ul li a,
+body.darkmode nav ul li ul li a{
+	background: #393939;
+	color:#fff;
+}
+body.darkmode .nav-sub, body.darkmode .nav-sub ul li a{
+	background: #212121;
+}
+body.darkmode .nav-wrapper ul li a:hover{
+	color: #ffff00;
+}
+body.darkmode .nav-sub li a:hover,
+body.darkmode .nav-wrapper ul li .nav-sub li a:hover,
+body.darkmode .nav-sub li a.active{
+	color: #ffff00;
+	padding-left:18px;
+}
+body.darkmode{
+	font-family: 'Lato', sans-serif;
+	background: #393939;
+	color:#fff;	
+}
+body.darkmode div, body.darkmode a, 
+body.darkmode div h2, body.darkmode div h3, body.darkmode div h4, body.darkmode div h1, 
+body.darkmode div h5, body.darkmode div p, body.darkmode div text{
+	color:#fff;
+}
+body.darkmode .form input, 
+body.darkmode form div textarea {
+	color: #fff;
+	background: #777;
+}
+body.darkmode form div div div input {
+	color: #fff;
+}
+body.darkmode section div .card-body h2, body.darkmode section div .card-body p{
+	color: #111;
+} 
+
 ::selection {background: #212121;color: #fff;}
 ::-moz-selection {background: #212121;color: #fff;}
 ::-webkit-selection {background: #212121;color: #fff;}
@@ -283,7 +324,7 @@ hr.light {background:rgba(255, 255, 255, 0.03);border-color: rgba(255, 255, 255,
 	font-weight: 600;
 	text-transform: uppercase;
 	letter-spacing: 1px;
-	color: #777;
+	color: #111;
 	border: 1px solid rgba(0,0,0, .1);
     padding-left: 7px;
     padding-right: 0px;    
@@ -343,7 +384,7 @@ hr.light {background:rgba(255, 255, 255, 0.03);border-color: rgba(255, 255, 255,
 	border-width:1px;
     border-radius: 0;-webkit-border-radius: 0;
     box-shadow: none;-webkit-box-shadow: none;
-    color: #777;
+    color: #111;
 	display: block;
     font-size: 12px;
     font-weight: 400;
@@ -826,7 +867,7 @@ hr.light {background:rgba(255, 255, 255, 0.03);border-color: rgba(255, 255, 255,
 	-webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
     display: none;
     left: 0;
-    padding: 10px 15px;
+    padding: 0px 0px;
     position: absolute;
     top: 100%;
     width: 200px;
@@ -1015,8 +1056,8 @@ hr.light {background:rgba(255, 255, 255, 0.03);border-color: rgba(255, 255, 255,
 }
 .mobile-nav:hover,
 .mobile-nav.active{
-	background: #fff;
-	color: #777;
+	/* background: #fff; */
+	color: #ffff00;
 }
 .mobile-nav:active{
 	-webkit-box-shadow: 0 0 35px rgba(0,0,0,.05) inset;
@@ -2122,7 +2163,7 @@ ul.project-meta-detail{
 .project-prev-title a:hover{color:#212121}
 .project-logo{
 	position:absolute;
-	top: 50%;
+	top: 20%;
 	text-align:center;
 	z-index:2;	
     transform: translateY(-50%);
